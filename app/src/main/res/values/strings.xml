@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Albums</string>
+    <string name="retry">Retry</string>
+    <string name="something_went_wrong_please_try_again_later">something went wrong please try again later...check the network</string>
+</resources>

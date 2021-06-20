@@ -1,0 +1,38 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = "1.4.31"
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.2"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "de.mannodermaus.gradle.plugins:android-junit5:1.6.2.0"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+ext {
+    fastAdapterVersion = "5.2.1"
+    daggerVersion = "2.28.1"
+    androidxLifecycleVersion = "2.2.0"
+    junit5 = "5.7.0"
+    retrofitVersion = "2.9.0"
+    coroutineVersion = "1.4.2"
+    lifecycle_version = "2.3.0"
+    junit5 = "5.7.1"
+    roomVersion = "2.2.6"
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
